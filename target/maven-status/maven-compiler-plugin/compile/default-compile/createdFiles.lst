@@ -1,0 +1,6 @@
+cn\huimin\learnboot\controls\TestBootControl.class
+cn\huimin\learnboot\controls\FirstBootControl.class
+cn\huimin\learnboot\dto\UserInfoDTO.class
+cn\huimin\DemoApplication.class
+cn\huimin\learnboot\dao\UserInfoDao.class
+cn\huimin\learnboot\config\DataConfig.class

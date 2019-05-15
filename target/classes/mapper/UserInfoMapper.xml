@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.huimin.learnboot.dao.UserInfoDao">
+ <select id="getInfo" resultType="cn.huimin.learnboot.dto.UserInfoDTO">
+  select id,username,userage from userinfo
+ </select>
+ 
+<insert id="addInfo">
+  insert into userinfo (username,userage) values (#{username},#{userage})
+ </insert>
+
+ <update id="updateInfo">
+update userinfo set userage=userage+#{id} where id=#{id}
+</update>
+
+<delete id="delInfo">
+delete from userinfo where id=#{id}
+</delete>
+</mapper>
